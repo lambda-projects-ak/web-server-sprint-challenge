@@ -79,7 +79,7 @@ int send_request(int fd, char *hostname, char *port, char *path)
   int response_length = sprintf(request,
                                 "GET /%s HTTP/1.1\n"
                                 "Host: %s:%s\n"
-                                "Connection: close"
+                                "Connection: close\n"
                                 "\n",
                                 path, hostname, port);
 
